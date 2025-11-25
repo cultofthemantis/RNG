@@ -14,7 +14,6 @@ fetch("people.json")
   .then(res => res.json())
   .then(data => {
     people = data;
-    console.log("Loaded data:", people);
   })
   .catch(err => console.error("Error loading JSON:", err));
 
@@ -24,7 +23,7 @@ function getRandomPerson() {
 }
 
 
-//from google and ChatGPT
+//Help with the history from google and ChatGPT
 function renderHistory() {
 
   historyList.innerHTML = "";
@@ -41,7 +40,7 @@ function renderHistory() {
   });
 }
 
-
+//Generate Name and Email + History
 generateBtn.addEventListener("click", () => {
   if (people.length === 0) {
     fullName.textContent = "N/A";
@@ -66,6 +65,8 @@ generateBtn.addEventListener("click", () => {
   renderHistory();
 });
 
+
+//Clear Button
 clearBtn.addEventListener("click", () => {
   history = [];
   renderHistory();
