@@ -1,0 +1,12 @@
+.generator-container{
+    display: flex;
+    justify-content: center;
+    background-color: mediumpurple;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 500px;
+    border-radius: 15px;
+    border-style: double;
+    border-width: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
